@@ -912,6 +912,14 @@ i.sign-btn:hover{
     bottom: 0;
 }
 
+.navigation{
+    color: var(--bold-color);
+    font-size: 2rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
 .slider-wrap .modal-image img{
     width: 100%;
     display: block;

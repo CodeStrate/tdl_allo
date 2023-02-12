@@ -50,10 +50,10 @@
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
                     <li>
-                      <a href="index.html" class="nav-link">Dashboard</a>
+                      <a href="index.php" class="nav-link">Dashboard</a>
                     </li>
                     <li>
-                      <a href="form.html" class="log-link">
+                      <a href="form.php" class="log-link">
                             <i class='bx bx-log-in-circle sign-btn' ></i>
                       </a>
                   </li>
@@ -491,6 +491,9 @@
           <div class="modal">
             <div class="modal-overlay"></div>
             <div class="slider-wrap">
+            <div class="prev-btn navigation">
+                <i class="bx bxs-chevron-left-circle"></i>
+              </div>
               <div class="modal-card " id="0">
                 <div class="modal-image">
                   <img src="images/modal_images/modal-s.jpg" alt="">
@@ -610,6 +613,9 @@
                 </ul>
                   <q>and much more.</q>
                 </div>
+              </div>
+              <div class="next-btn navigation">
+                <i class="bx bxs-chevron-right-circle"></i>
               </div>
             </div>
           </div>

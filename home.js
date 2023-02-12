@@ -18,6 +18,10 @@ const modal_overlay = document.querySelector(".modal-overlay");
 
 const modal_cards = document.querySelectorAll(".modal-card");
 
+const prevBtn = document.querySelector(".prev-btn");
+
+const nextBtn = document.querySelector(".next-btn");
+
 window.addEventListener("scroll", () => {
     activeLink();
    if(!mlPlayed) mlCounter(); 

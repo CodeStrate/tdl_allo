@@ -23,9 +23,9 @@
         <div class="container">
             <div class="inner-box">
                 <div class="forms-wrap">
-                    <form action="index.html" class="sign-in-form" autocomplete="off">
+                    <form action="index.php" class="sign-in-form" autocomplete="off">
                         <div class="logo">
-                            <a href="home.html"><img src="images/su_alt.png" alt="TDL iON"></a>
+                            <a href="home.php"><img src="images/su_alt.png" alt="TDL iON"></a>
                         </div>
 
                         <div class="heading">
@@ -69,9 +69,9 @@
                         </div>
                     </form>
 
-                    <form action="index.html" class="sign-up-form" autocomplete="off">
+                    <form action="index.php" class="sign-up-form" autocomplete="off">
                         <div class="logo">
-                            <a href="home.html"><img src="images/su_alt.png" alt="TDL iON"></a>
+                            <a href="home.php"><img src="images/su_alt.png" alt="TDL iON"></a>
                         </div>
 
                         <div class="heading">
