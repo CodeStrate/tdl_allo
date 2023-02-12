@@ -1,7 +1,7 @@
 <?php
   session_start();
   $connection = mysqli_connect("localhost","root","");
-  $db = mysqli_select_db($connection,"online_tdl");
+  $db = mysqli_select_db($connection,"portal-app-db");
 ?>
 
 <!DOCTYPE html>
@@ -76,7 +76,7 @@
                 </ul>
             </div>
             <div class="bottom-content">
-                <li class="logout-mode"><a href="form.html">
+                <li class="logout-mode"><a href="form.php">
                         <i class='bx bx-log-out icon' ></i>
                         <span class="text nav-text">Logout</span>
                     </a>

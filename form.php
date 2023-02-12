@@ -1,7 +1,7 @@
 <?php
   session_start();
   $connection = mysqli_connect("localhost","root","");
-  $db = mysqli_select_db($connection,"online_tdl");
+  $db = mysqli_select_db($connection,"portal-app-db");
 ?>
 
 <!DOCTYPE html>
@@ -23,9 +23,9 @@
         <div class="container">
             <div class="inner-box">
                 <div class="forms-wrap">
-                    <form action="index.php" class="sign-in-form" autocomplete="off">
+                    <form action="index.html" class="sign-in-form" autocomplete="off">
                         <div class="logo">
-                            <a href="home.php"><img src="images/su_alt.png" alt="TDL iON"></a>
+                            <a href="home.html"><img src="images/su_alt.png" alt="TDL iON"></a>
                         </div>
 
                         <div class="heading">
@@ -38,7 +38,8 @@
                            <div class="input-wrap">
                                 <input
                                 type="text"
-                                minlength="15"
+                                minlength="6"
+                                maxlength="15"
                                 class="input-field"
                                 autocomplete="off"
                                 required
@@ -50,7 +51,8 @@
                            <div class="input-wrap">
                             <input
                             type="password"
-                            minlength="8"
+                            minlength="5"
+                            maxlength="8"
                             class="input-field"
                             autocomplete="off"
                             required
@@ -67,9 +69,9 @@
                         </div>
                     </form>
 
-                    <form action="index.php" class="sign-up-form" autocomplete="off">
+                    <form action="index.html" class="sign-up-form" autocomplete="off">
                         <div class="logo">
-                            <a href="home.php"><img src="images/su_alt.png" alt="TDL iON"></a>
+                            <a href="home.html"><img src="images/su_alt.png" alt="TDL iON"></a>
                         </div>
 
                         <div class="heading">
@@ -82,7 +84,8 @@
                            <div class="input-wrap">
                                 <input
                                 type="text"
-                                minlength="15"
+                                minlength="6"
+                                maxlength="15"
                                 class="input-field"
                                 autocomplete="off"
                                 required
@@ -105,7 +108,8 @@
                            <div class="input-wrap">
                             <input
                             type="password"
-                            minlength="8"
+                            minlength="6"
+                            maxlength="8"
                             class="input-field"
                             autocomplete="off"
                             required

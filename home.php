@@ -1,7 +1,7 @@
 <?php
   session_start();
   $connection = mysqli_connect("localhost","root","");
-  $db = mysqli_select_db($connection,"online_tdl");
+  $db = mysqli_select_db($connection,"portal-app-db");
 ?>
 
 <!DOCTYPE html>
@@ -50,10 +50,10 @@
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
                     <li>
-                      <a href="index.php" class="nav-link">Dashboard</a>
+                      <a href="index.html" class="nav-link">Dashboard</a>
                     </li>
                     <li>
-                      <a href="form.php" class="log-link">
+                      <a href="form.html" class="log-link">
                             <i class='bx bx-log-in-circle sign-btn' ></i>
                       </a>
                   </li>
@@ -491,12 +491,109 @@
           <div class="modal">
             <div class="modal-overlay"></div>
             <div class="slider-wrap">
-              <div class="prev-btn navigation">
-                <i class="bx bxs-chevron-left-circle"></i>
-              </div>
-              <div class="modal-card modal-prg">
+              <div class="modal-card " id="0">
                 <div class="modal-image">
-                  <img class="showImage" src="images/modal_images/modal-prg.jpg" alt="">
+                  <img src="images/modal_images/modal-s.jpg" alt="">
+                </div>
+                <div class="modal-content">
+                  <h3>Social Media Marketing</h3>
+                <ul>
+                  <li>
+                    <p>Performance Marketing.</p>
+                    </li>
+                  <li>
+                    <p>Social Presence.</p>
+                  </li>
+                  <li>
+                    <p>SEO and Content Study.</p>
+                  </li>
+                </ul>
+                  <q>and much more.</q>
+                </div>
+              </div>
+              <div class="modal-card " id="1">
+                <div class="modal-image">
+                  <img src="images/modal_images/modal-f.jpg" alt="">
+                </div>
+                <div class="modal-content">
+                  <h3>Fashion Design</h3>
+                <ul>
+                  <li>
+                    <p>Today's Trends.</p>
+                    </li>
+                  <li>
+                    <p>Popular Brand Study.</p>
+                  </li>
+                  <li>
+                    <p>Design Language.</p>
+                  </li>
+                </ul>
+                  <q>and much more.</q>
+                </div>
+              </div>
+              <div class="modal-card " id="2">
+                <div class="modal-image">
+                  <img src="images/modal_images/modal-b.jpg" alt="">
+                </div>
+                <div class="modal-content">
+                  <h3>Business Studies</h3>
+                <ul>
+                  <li>
+                    <p>Enterpreneurship Essentials.</p>
+                    </li>
+                  <li>
+                    <p>Finance and Accounting.</p>
+                  </li>
+                  <li>
+                    <p>Business Trends.</p>
+                  </li>
+                </ul>
+                  <q>and much more.</q>
+                </div>
+              </div>
+              <div class="modal-card " id="3">
+                <div class="modal-image">
+                  <img src="images/modal_images/modal-d.jpg" alt="">
+                </div>
+                <div class="modal-content">
+                  <h3>Art & Design</h3>
+                <ul>
+                  <li>
+                    <p>Kinetic Design.</p>
+                    </li>
+                  <li>
+                    <p>Graphic Designing.</p>
+                  </li>
+                  <li>
+                    <p>UI/UX Designing.</p>
+                  </li>
+                </ul>
+                  <q>and much more.</q>
+                </div>
+              </div>
+              <div class="modal-card " id="4">
+                <div class="modal-image">
+                  <img src="images/modal_images/modal-pl.jpeg" alt="">
+                </div>
+                <div class="modal-content">
+                  <h3>Management and Planning</h3>
+                <ul>
+                  <li>
+                    <p>City Planning.</p>
+                    </li>
+                  <li>
+                    <p>Event Management.</p>
+                  </li>
+                  <li>
+                    <p>Resource Management and Planning.</p>
+                  </li>
+                </ul>
+                  <q>and much more.</q>
+                </div>
+              </div>
+              <div class="modal-card " id="5">
+                <div class="modal-image">
+                  <img src="images/modal_images/modal-prg.jpg" alt="">
                 </div>
                 <div class="modal-content">
                   <h3>Intro To Programming</h3>
@@ -513,109 +610,6 @@
                 </ul>
                   <q>and much more.</q>
                 </div>
-              </div>
-              <div class="modal-card modal-b">
-                <div class="modal-image">
-                  <img class="showImage" src="images/modal_images/modal-b.jpg" alt="">
-                </div>
-                <div class="modal-content">
-                  <h3>Intro To Programming</h3>
-                <ul>
-                  <li>
-                    <p>Java and Data Structures.</p>
-                    </li>
-                  <li>
-                    <p>Python and Object Oriented Programming.</p>
-                  </li>
-                  <li>
-                    <p>Web Development.</p>
-                  </li>
-                </ul>
-                  <q>and much more.</q>
-                </div>
-              </div>
-              <div class="modal-card modal-d">
-                <div class="modal-image">
-                  <img class="showImage" src="images/modal_images/modal-d.jpg" alt="">
-                </div>
-                <div class="modal-content">
-                  <h3>Intro To Programming</h3>
-                <ul>
-                  <li>
-                    <p>Java and Data Structures.</p>
-                    </li>
-                  <li>
-                    <p>Python and Object Oriented Programming.</p>
-                  </li>
-                  <li>
-                    <p>Web Development.</p>
-                  </li>
-                </ul>
-                  <q>and much more.</q>
-                </div>
-              </div>
-              <div class="modal-card modal-pl">
-                <div class="modal-image">
-                  <img class="showImage" src="images/modal_images/modal-pl.jpg" alt="">
-                </div>
-                <div class="modal-content">
-                  <h3>Intro To Programming</h3>
-                <ul>
-                  <li>
-                    <p>Java and Data Structures.</p>
-                    </li>
-                  <li>
-                    <p>Python and Object Oriented Programming.</p>
-                  </li>
-                  <li>
-                    <p>Web Development.</p>
-                  </li>
-                </ul>
-                  <q>and much more.</q>
-                </div>
-              </div>
-              <div class="modal-card modal-s">
-                <div class="modal-image">
-                  <img class="showImage" src="images/modal_images/modal-s.jpg" alt="">
-                </div>
-                <div class="modal-content">
-                  <h3>Intro To Programming</h3>
-                <ul>
-                  <li>
-                    <p>Java and Data Structures.</p>
-                    </li>
-                  <li>
-                    <p>Python and Object Oriented Programming.</p>
-                  </li>
-                  <li>
-                    <p>Web Development.</p>
-                  </li>
-                </ul>
-                  <q>and much more.</q>
-                </div>
-              </div>
-              <div class="modal-card modal-f">
-                <div class="modal-image">
-                  <img class="showImage" src="images/modal_images/modal-f.jpg" alt="">
-                </div>
-                <div class="modal-content">
-                  <h3>Intro To Programming</h3>
-                <ul>
-                  <li>
-                    <p>Java and Data Structures.</p>
-                    </li>
-                  <li>
-                    <p>Python and Object Oriented Programming.</p>
-                  </li>
-                  <li>
-                    <p>Web Development.</p>
-                  </li>
-                </ul>
-                  <q>and much more.</q>
-                </div>
-              </div>
-              <div class="next-btn navigation">
-                <i class="bx bxs-chevron-right-circle"></i>
               </div>
             </div>
           </div>

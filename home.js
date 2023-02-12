@@ -18,10 +18,6 @@ const modal_overlay = document.querySelector(".modal-overlay");
 
 const modal_cards = document.querySelectorAll(".modal-card");
 
-const prevBtn = document.querySelector(".prev-btn");
-
-const nextBtn = document.querySelector(".next-btn");
-
 window.addEventListener("scroll", () => {
     activeLink();
    if(!mlPlayed) mlCounter(); 
@@ -96,9 +92,11 @@ let mixer = mixitup(".course-gallery", {
 
 // --------------------- Course Modal Pop Up Animation --------------------------
 
-crs_icons.forEach((icon) => icon.addEventListener("click", () => {
+crs_icons.forEach((icon, i) => icon.addEventListener("click", () => {
     crs_section.classList.add("open");
     document.body.classList.add("stopScrolling");
+    cardChange();
+    cardShow(i);
 }));
 
 modal_overlay.addEventListener("click", () => {
@@ -109,8 +107,16 @@ modal_overlay.addEventListener("click", () => {
 // --------------------- CardChange Animation --------------------------
 
 function cardChange(){
-    
+    modal_cards.forEach((card) => {
+        card.classList.remove("show");
+    });
 }
+
+function cardShow(id){
+    let showCard = document.getElementById(`${id}`);
+    showCard.classList.add("show");
+}
+
 
 
 // --------------------- Testimonial Swiper Animation --------------------------
